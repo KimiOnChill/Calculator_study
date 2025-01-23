@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="calculator" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <head>
+    <title>Study on calculator</title>
+    <link rel="stylesheet" href="CalculatorCSS.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="output-box">
+      <div id="output-text">0</div>
+    </div>
+
+    <div id="test-array-box"></div><!-- for memory  -->
+
+    <div id="buttons-container" class="grid">
+      <button 
+        class="grid-item"
+        id="button-delete-one"
+        type="button"
+        >
+        <i class="material-icons">backspace</i>
+      </button>
+      <button
+        class="grid-item" 
+        id="button-clear" 
+        onclick="clear()"
+        type="button"
+        >
+        C
+      </button>
+      <button
+        class="grid-item"
+        id="button-percent"
+        value="%"
+        onclick="display(persentB)"
+        type="button"
+        >
+        %
+      </button>
+      <button
+        class="grid-item"
+        id="button-divide"
+        value="/"
+        onclick="display(divideB)"
+        type="button"
+      >
+        /
+      </button>
+      <button
+        class="grid-item"
+        id="button-1"
+        value="1"
+        onclick="display(oneB)"
+        type="button"
+      >
+        1
+      </button>
+      <button
+        class="grid-item"
+        id="button-2"
+        value="2"
+        onclick="display(twoB)"
+        type="button"
+      >
+        2
+      </button>
+      <button
+        class="grid-item"
+        id="button-3"
+        value="3"
+        onclick="display(threeB)"
+        type="button"
+      >
+        3
+      </button>
+      <button
+        class="grid-item"
+        id="button-minus"
+        value="-"
+        onclick="display(minusB)"
+        type="button"
+      >
+        -
+      </button>
+      <button
+        class="grid-item"
+        id="button-4"
+        value="4"
+        onclick="display(fourB)"
+        type="button"
+      >
+        4
+      </button>
+      <button
+        class="grid-item"
+        d="button-5"
+        value="5"
+        onclick="display(fiveB)"
+        type="button"
+      >
+        5
+      </button>
+      <button
+        class="grid-item"
+        id="button-6"
+        value="6"
+        onclick="display(sixB)"
+        type="button"
+      >
+        6
+      </button>
+      <button
+        class="grid-item"
+        id="button-plus"
+        value="+"
+        onclick="display(plusB)"
+        type="button"
+      >
+        +
+      </button>
+      <button
+        class="grid-item"
+        id="button-7"
+        value="7"
+        onclick="display(sevenB)"
+        type="button"
+      >
+        7
+      </button>
+      <button
+        class="grid-item"
+        id="button-8"
+        value="8"
+        onclick="display(eightB)"
+        type="button"
+      >
+        8
+      </button>
+      <button
+        class="grid-item"
+        id="button-9"
+        value="9"
+        onclick="display(nineB)"
+        type="button"
+      >
+        9
+      </button>
+      <button
+        class="grid-item"
+        id="button-multiply"
+        value="*"
+        onclick="display(multiplyB)"
+        type="button"
+      >
+        *
+      </button>
+      <!-- TODO motivated exression in following button -->
+      <button 
+        class="grid-item" 
+        id="button-gj" 
+        value="?" 
+        onclick=""
+        type="button"
+        >
+        ?
+      </button>
+      <button
+        class="grid-item"
+        id="button-0"
+        value="0"
+        onclick="display(zeroB)"
+        type="button"
+        >
+        0
+      </button>
+      <button
+        class="grid-item"
+        id="button-point"
+        value="."
+        onclick="display(pointB)"
+        type="button"
+      >
+        .
+      </button>
+      <button
+        class="grid-item"
+        id="button-equal"
+        value="="
+        onclick="display(equalB)"
+        type="button"
+      >
+        =
+      </button>
+    </div>
+    <script src="CalculatorJS.js"></script>
+  </body>
+</html>

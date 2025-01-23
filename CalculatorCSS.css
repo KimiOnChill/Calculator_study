@@ -1,0 +1,83 @@
+*,
+*::before,
+*::after {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* color variables */
+  --green-back: #1B6535;
+  --green: #558B7E;
+  --green-tennis: #C9EC93;
+  --button-border: #F0ECE3;
+  --button-color: #F4C7AB;
+  --main-text: #010A3D;
+  /* unit variables */
+  --XXXS: 4px;
+  --XXS: 8px;
+  --XS: 12px;
+  --small: 16px;
+  --standart-small: 20px;
+  --standart: 28px;
+  --standart-large: 40px;
+  --large: 60px;
+  --XL: 100px;
+  --XXL: 160px;
+  --XXXL: 240px;
+}
+
+body {
+  text-align: center;
+  background-color: var(--green-back);
+  color: white;
+}
+
+#output-box, #test-array-box {
+  /* width: clamp(30%, 200vw, 70%); */
+  width: 300px;
+  border: 2px solid black; /* TODO: remove border or make it more interesting */
+}
+
+#output-text {
+  font-size: 70px;
+}
+
+.grid {
+  max-width: 1000px;
+  grid-auto-rows: 1fr;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  row-gap: 10px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: clamp(7%, 140px, 90%);
+  height: clamp(7%, 140px, 90%);;
+  cursor: pointer;
+  color: #0a0a23;
+  background-image: linear-gradient(#fecc4c, #ffac33);
+  border-radius: 50%;
+  font-size: 24px;
+}
+
+button {
+  padding:  2.5em 2.5em;
+  border: 3px solid #feac32;
+}
+
+button:hover {
+  background-image: linear-gradient(#ffcc4c, #ed9107);
+}
+
+button:active {
+  border: 3px solid var(--green-back);
+}
