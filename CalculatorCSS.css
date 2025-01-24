@@ -35,8 +35,7 @@ body {
 }
 
 #output-box, #test-array-box {
-  /* width: clamp(30%, 200vw, 70%); */
-  width: 300px;
+  width: clamp(30%, 200vw, 70%);
   border: 2px solid black; /* TODO: remove border or make it more interesting */
 }
 

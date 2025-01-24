@@ -4,6 +4,10 @@
 //!alert
 //TODO
 ////this is not nessasary
+//TODO 1) wrap everything into one container
+//TODO 2) create new background
+//TODO 3) make delete button work
+//TODO 4) make clear button work
 
 //define all vars
 const backspaceB = document.getElementById("button-delete-one");
@@ -36,8 +40,8 @@ const memoryArray = []; //array of input numbers
 const display = (input) => {
   textElement.innerText += `${input.value}`;
   memoryArray.push(input.value);
-  arrayDisplay.innerText += memoryArray; 
-    // adjustFontSize();
+  arrayDisplay.innerText = memoryArray; 
+  // adjustFontSize();
 };
 
 //function for clear button to delete everything output have
