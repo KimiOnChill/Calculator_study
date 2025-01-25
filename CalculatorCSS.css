@@ -34,8 +34,13 @@ body {
   color: white;
 }
 
+.calculator-container {
+  width: clamp(400px, 50vw, 800px);
+  /* height: 40vh; */
+}
+
 #output-box, #test-array-box {
-  width: clamp(30%, 200vw, 70%);
+  width: clamp(200px, 25vw, 400px);
   border: 2px solid black; /* TODO: remove border or make it more interesting */
 }
 
